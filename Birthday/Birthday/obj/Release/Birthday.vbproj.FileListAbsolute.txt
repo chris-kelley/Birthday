@@ -1,0 +1,20 @@
+C:\Users\elfinkind\AppData\Local\Temporary Projects\Birthday\bin\Release\Birthday.exe
+C:\Users\elfinkind\AppData\Local\Temporary Projects\Birthday\bin\Release\Birthday.pdb
+C:\Users\elfinkind\AppData\Local\Temporary Projects\Birthday\bin\Release\Birthday.xml
+C:\Users\elfinkind\AppData\Local\Temporary Projects\Birthday\obj\Release\ResolveAssemblyReference.cache
+C:\Users\elfinkind\AppData\Local\Temporary Projects\Birthday\obj\Release\Birthday.Form1.resources
+C:\Users\elfinkind\AppData\Local\Temporary Projects\Birthday\obj\Release\Birthday.Resources.resources
+C:\Users\elfinkind\AppData\Local\Temporary Projects\Birthday\obj\Release\Birthday.vbproj.GenerateResource.Cache
+C:\Users\elfinkind\AppData\Local\Temporary Projects\Birthday\obj\Release\Birthday.exe
+C:\Users\elfinkind\AppData\Local\Temporary Projects\Birthday\obj\Release\Birthday.xml
+C:\Users\elfinkind\AppData\Local\Temporary Projects\Birthday\obj\Release\Birthday.pdb
+C:\Users\elfinkind\Documents\Programs\Birthday\Birthday\bin\Release\Birthday.exe
+C:\Users\elfinkind\Documents\Programs\Birthday\Birthday\bin\Release\Birthday.pdb
+C:\Users\elfinkind\Documents\Programs\Birthday\Birthday\bin\Release\Birthday.xml
+C:\Users\elfinkind\Documents\Programs\Birthday\Birthday\obj\Release\ResolveAssemblyReference.cache
+C:\Users\elfinkind\Documents\Programs\Birthday\Birthday\obj\Release\Birthday.Form1.resources
+C:\Users\elfinkind\Documents\Programs\Birthday\Birthday\obj\Release\Birthday.Resources.resources
+C:\Users\elfinkind\Documents\Programs\Birthday\Birthday\obj\Release\Birthday.vbproj.GenerateResource.Cache
+C:\Users\elfinkind\Documents\Programs\Birthday\Birthday\obj\Release\Birthday.exe
+C:\Users\elfinkind\Documents\Programs\Birthday\Birthday\obj\Release\Birthday.xml
+C:\Users\elfinkind\Documents\Programs\Birthday\Birthday\obj\Release\Birthday.pdb

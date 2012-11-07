@@ -1,0 +1,23 @@
+C:\Users\elfinkind\AppData\Local\Temporary Projects\Birthday\bin\Debug\Birthday.exe
+C:\Users\elfinkind\AppData\Local\Temporary Projects\Birthday\bin\Debug\Birthday.pdb
+C:\Users\elfinkind\AppData\Local\Temporary Projects\Birthday\bin\Debug\Birthday.xml
+C:\Users\elfinkind\AppData\Local\Temporary Projects\Birthday\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\elfinkind\AppData\Local\Temporary Projects\Birthday\obj\Debug\Birthday.Form1.resources
+C:\Users\elfinkind\AppData\Local\Temporary Projects\Birthday\obj\Debug\Birthday.Resources.resources
+C:\Users\elfinkind\AppData\Local\Temporary Projects\Birthday\obj\Debug\Birthday.vbproj.GenerateResource.Cache
+C:\Users\elfinkind\AppData\Local\Temporary Projects\Birthday\obj\Debug\Birthday.exe
+C:\Users\elfinkind\AppData\Local\Temporary Projects\Birthday\obj\Debug\Birthday.xml
+C:\Users\elfinkind\AppData\Local\Temporary Projects\Birthday\obj\Debug\Birthday.pdb
+C:\Users\elfinkind\Documents\Programs\Birthday\Birthday\obj\Debug\Birthday.exe
+C:\Users\elfinkind\Documents\Programs\Birthday\Birthday\obj\Debug\Birthday.xml
+C:\Users\elfinkind\Documents\Programs\Birthday\Birthday\obj\Debug\Birthday.pdb
+C:\Users\elfinkind\Documents\Programs\Birthday\Birthday\bin\Debug\Birthday.exe
+C:\Users\elfinkind\Documents\Programs\Birthday\Birthday\bin\Debug\Birthday.pdb
+C:\Users\elfinkind\Documents\Programs\Birthday\Birthday\bin\Debug\Birthday.xml
+C:\Users\elfinkind\Documents\Programs\Birthday\Birthday\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\elfinkind\Documents\Programs\Birthday\Birthday\obj\Debug\Birthday.Form1.resources
+C:\Users\elfinkind\Documents\Programs\Birthday\Birthday\obj\Debug\Birthday.Resources.resources
+C:\Users\elfinkind\Documents\Programs\Birthday\Birthday\obj\Debug\Birthday.vbproj.GenerateResource.Cache
+C:\Users\elfinkind\Documents\Programs\SharedPrograms\Birthday\Birthday\obj\Debug\Birthday.exe
+C:\Users\elfinkind\Documents\Programs\SharedPrograms\Birthday\Birthday\obj\Debug\Birthday.xml
+C:\Users\elfinkind\Documents\Programs\SharedPrograms\Birthday\Birthday\obj\Debug\Birthday.pdb
