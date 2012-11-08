@@ -246,6 +246,7 @@
 
         OutputLabel1.ResetText()
         OutputLabel2.ResetText()
+        OutputLabel3.ResetText()
 
     End Sub
 
@@ -264,6 +265,12 @@
     Private Sub HowToUseToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles HowToUseToolStripMenuItem.Click
 
         MessageBox.Show("This application will tell you the day of the week on a particular date fell, falls, or will fall, from 1900 through 2099. Leap years are accounted for, so just enter data as needed." & Environment.NewLine & Environment.NewLine & "Simply choose your birth year, month, and day from the drop down menus, and then press the Calculate button." & Environment.NewLine & Environment.NewLine & "The application will then display the birthday you entered and the day of the week for that date." & Environment.NewLine & Environment.NewLine & "To try again, you can either immediately choose new options from the drop down menus, or you can press the Reset button to clear the fields and then choose new information." & Environment.NewLine & Environment.NewLine & "To exit the application, click the Close button.", "How to use", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+    End Sub
+
+    Private Sub AboutToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AboutToolStripMenuItem.Click
+
+        MessageBox.Show("All code written by me, Chris Kelley, October 2012" & Environment.NewLine & Environment.NewLine & "Algorithm taken from Brainetics®, which I purchased for my daughter some months ago.", "About", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
     End Sub
 End Class

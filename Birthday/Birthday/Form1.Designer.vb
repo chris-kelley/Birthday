@@ -65,19 +65,19 @@ Partial Class Form1
         'CalculateToolStripMenuItem
         '
         Me.CalculateToolStripMenuItem.Name = "CalculateToolStripMenuItem"
-        Me.CalculateToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.CalculateToolStripMenuItem.Size = New System.Drawing.Size(123, 22)
         Me.CalculateToolStripMenuItem.Text = "Calculate"
         '
         'ResetToolStripMenuItem
         '
         Me.ResetToolStripMenuItem.Name = "ResetToolStripMenuItem"
-        Me.ResetToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ResetToolStripMenuItem.Size = New System.Drawing.Size(123, 22)
         Me.ResetToolStripMenuItem.Text = "Reset"
         '
         'CloseToolStripMenuItem
         '
         Me.CloseToolStripMenuItem.Name = "CloseToolStripMenuItem"
-        Me.CloseToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.CloseToolStripMenuItem.Size = New System.Drawing.Size(123, 22)
         Me.CloseToolStripMenuItem.Text = "Close"
         '
         'HelpToolStripMenuItem
