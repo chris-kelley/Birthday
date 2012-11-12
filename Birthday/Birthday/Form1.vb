@@ -33,6 +33,9 @@ Public Class Form1
 
         Next
 
+        MonthComboBox.Enabled = False
+        DayComboBox.Enabled = False
+
     End Sub
 
     Private Sub MonthComboBox_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MonthComboBox.SelectedIndexChanged
@@ -43,25 +46,37 @@ Public Class Form1
 
         'Each time a new month is chosen, the day gets reset until the month is analyzed.
 
-        DayComboBox.SelectedIndex = -1
-        DayComboBox.Items.Clear()
+        If MonthComboBox.SelectedIndex > -1 Then
 
-        'This section checks for leap year. If the year is a leap year, I set my leap year
-        'counter to 1, otherwise I set it to 0. I use this value later to configure a leap 
-        'year date.
+            DayComboBox.Enabled = True
 
-        FullYear = CInt(YearComboBox.SelectedItem)
-        ModYear = FullYear Mod 100
+            DayComboBox.SelectedIndex = -1
+            DayComboBox.Items.Clear()
 
-        If FullYear Mod 4 = 0 Then
+            'This section checks for leap year. If the year is a leap year, I set my leap year
+            'counter to 1, otherwise I set it to 0. I use this value later to configure a leap 
+            'year date.
 
-            If FullYear Mod 100 = 0 Then
+            FullYear = CInt(YearComboBox.SelectedItem)
+            ModYear = FullYear Mod 100
 
-                If FullYear Mod 400 = 0 Then
+            If FullYear Mod 4 = 0 Then
 
-                    LeapYear = 1
+                If FullYear Mod 100 = 0 Then
+
+                    If FullYear Mod 400 = 0 Then
+
+                        LeapYear = 1
+
+                    End If
+
+                Else
+
+                    LeapYear = 0
 
                 End If
+
+                LeapYear = 1
 
             Else
 
@@ -69,53 +84,47 @@ Public Class Form1
 
             End If
 
-            LeapYear = 1
+            'Now, I check to see if it is indeed a leap year. If it is, and if the month is February,
+            'I set the number of days in that month to 29. If not, then the number of days is 28.
 
-        Else
+            If LeapYear = 1 And MonthComboBox.SelectedIndex = 1 Then
 
-            LeapYear = 0
+                DayCounter = 29
+
+            ElseIf LeapYear = 0 And MonthComboBox.SelectedIndex = 1 Then
+
+                DayCounter = 28
+
+                'If the month chosen is not February, I need to set the number of days
+                'according to the month. Using a Select Case allowed me to shorten the
+                'code by including the various months in a single line for each 30 and
+                '31 day months.
+
+            Else
+
+                Select Case MonthComboBox.SelectedIndex
+
+                    Case 0, 2, 4, 6, 7, 9, 11
+
+                        DayCounter = 31
+
+                    Case 3, 5, 8, 10
+
+                        DayCounter = 30
+
+                End Select
+
+            End If
+
+            'Now I execute a loop to populate the Day combo box with the right number of days
+
+            For a = 1 To DayCounter
+
+                DayComboBox.Items.Add(a.ToString)
+
+            Next
 
         End If
-
-        'Now, I check to see if it is indeed a leap year. If it is, and if the month is February,
-        'I set the number of days in that month to 29. If not, then the number of days is 28.
-
-        If LeapYear = 1 And MonthComboBox.SelectedIndex = 1 Then
-
-            DayCounter = 29
-
-        ElseIf LeapYear = 0 And MonthComboBox.SelectedIndex = 1 Then
-
-            DayCounter = 28
-
-            'If the month chosen is not February, I need to set the number of days
-            'according to the month. Using a Select Case allowed me to shorten the
-            'code by including the various months in a single line for each 30 and
-            '31 day months.
-
-        Else
-
-            Select Case MonthComboBox.SelectedIndex
-
-                Case 0, 2, 4, 6, 7, 9, 11
-
-                    DayCounter = 31
-
-                Case 3, 5, 8, 10
-
-                    DayCounter = 30
-
-            End Select
-
-        End If
-
-        'Now I execute a loop to populate the Day combo box with the right number of days
-
-        For a = 1 To DayCounter
-
-            DayComboBox.Items.Add(a.ToString)
-
-        Next
 
     End Sub
 
@@ -277,18 +286,6 @@ Public Class Form1
 
     Private Sub ResetButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ResetButton.Click, ResetToolStripMenuItem.Click
 
-        'I included two options for reset, so in the interest of saving space
-        'with regard to code, I designed a Reset Sub which I could call from 
-        'both options. I ended up actually making this one sub cover both
-        'options, but I deliberately left this in to show that I know how
-        'to call a method from another location within the code.
-
-        Reset()
-
-    End Sub
-
-    Private Sub Reset()
-
         'This is my Reset Sub. Here I ensure the headers for each combo box are in black
         'text and not bold, I set my combo boxes to blanks, and I clear my text output
         'fields. I further clear the items out of the day combo box so I can determine
@@ -306,9 +303,11 @@ Public Class Form1
         YearComboBox.SelectedIndex = -1
 
         MonthComboBox.SelectedIndex = -1
+        MonthComboBox.Enabled = False
 
         DayComboBox.SelectedIndex = -1
         DayComboBox.Items.Clear()
+        DayComboBox.Enabled = False
 
         OutputLabel1.ResetText()
         OutputLabel2.ResetText()
@@ -316,13 +315,7 @@ Public Class Form1
 
     End Sub
 
-    Private Sub CloseButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CloseButton.Click
-
-        Me.Close()
-
-    End Sub
-
-    Private Sub CloseToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CloseToolStripMenuItem.Click
+    Private Sub CloseButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CloseButton.Click, CloseToolStripMenuItem.Click
 
         Me.Close()
 
@@ -340,6 +333,16 @@ Public Class Form1
         'This is my 'About" message
 
         MessageBox.Show("All code written by me, Chris Kelley, October 2012" & Environment.NewLine & Environment.NewLine & "Algorithm taken from Brainetics®, which I purchased for my daughter some months ago.", "About", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+    End Sub
+
+    Private Sub YearComboBox_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles YearComboBox.SelectedIndexChanged
+
+        If YearComboBox.SelectedIndex > -1 Then
+
+            MonthComboBox.Enabled = True
+
+        End If
 
     End Sub
 End Class

@@ -90,13 +90,13 @@ Partial Class Form1
         'HowToUseToolStripMenuItem
         '
         Me.HowToUseToolStripMenuItem.Name = "HowToUseToolStripMenuItem"
-        Me.HowToUseToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.HowToUseToolStripMenuItem.Size = New System.Drawing.Size(134, 22)
         Me.HowToUseToolStripMenuItem.Text = "How to use"
         '
         'AboutToolStripMenuItem
         '
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(134, 22)
         Me.AboutToolStripMenuItem.Text = "About"
         '
         'YearLabel
